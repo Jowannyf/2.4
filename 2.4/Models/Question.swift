@@ -53,7 +53,7 @@ enum Animal: Character {
     var definition: String {
         switch self {
         case .dog:
-            return "бффбфббфбф"
+            return "Вам нравится быть с друзьями. Вы окружаете себя людьми,которые вам нравятся и всегда готовы помочь"
         case .cat:
             return "бффбфббфбф"
         case .rabbit:

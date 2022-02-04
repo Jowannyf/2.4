@@ -11,7 +11,7 @@
         <!--Introduction View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="IntroductionViewController" customModule="__4" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IntroductionViewController" customModule="2.4" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,6 +112,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Button">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="singleButtonPressed:" destination="S5p-0Q-XHK" eventType="touchUpInside" id="cjO-1X-mIi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Qq-60-9ba">
                                         <rect key="frame" x="103" y="108" width="82.5" height="38"/>
@@ -119,6 +122,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Button">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="singleButtonPressed:" destination="S5p-0Q-XHK" eventType="touchUpInside" id="dX9-MN-ghD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFo-nl-B4t">
                                         <rect key="frame" x="103" y="162" width="82.5" height="38"/>
@@ -126,6 +132,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Button">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="singleButtonPressed:" destination="S5p-0Q-XHK" eventType="touchUpInside" id="FW6-Lf-CIi"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -274,13 +283,7 @@
                             <constraint firstItem="Rrx-pf-oI4" firstAttribute="leading" secondItem="BAZ-Tf-jle" secondAttribute="leading" constant="16" id="wdI-db-ZUD"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Вопрос №" id="LMA-xT-JW9">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="kWf-Ld-ZJo">
-                            <connections>
-                                <segue destination="VSC-bC-NDQ" kind="show" id="4sI-sl-ga7"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Вопрос №" id="LMA-xT-JW9"/>
                     <connections>
                         <outlet property="multipleStackView" destination="exx-ta-woe" id="eec-z7-eaw"/>
                         <outlet property="questionLabel" destination="XzC-1L-jCt" id="MfU-ql-wGf"/>
@@ -346,7 +349,7 @@
                     <navigationItem key="navigationItem" title="Результат" id="T11-kR-GxM">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="iLR-fC-Cwz">
                             <connections>
-                                <segue destination="eW5-hb-ZPg" kind="unwind" unwindAction="unwindWithSegue:" id="WXQ-OQ-wVf"/>
+                                <segue destination="eW5-hb-ZPg" kind="unwind" unwindAction="unwindWithSegue:" id="VVy-t2-nDE"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -379,9 +382,6 @@
             <point key="canvasLocation" x="369.375" y="28.52112676056338"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="e0X-hV-1g2"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

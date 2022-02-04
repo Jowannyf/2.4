@@ -47,8 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				34937C502796FF97002EBFEB /* 2.4 */,
-				34937C672797246B002EBFEB /* Resources */,
-				34937C68279724CC002EBFEB /* App */,
 				34937C4F2796FF97002EBFEB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +62,8 @@
 		34937C502796FF97002EBFEB /* 2.4 */ = {
 			isa = PBXGroup;
 			children = (
+				34937C68279724CC002EBFEB /* App */,
+				34937C672797246B002EBFEB /* Resources */,
 				34937C6927972593002EBFEB /* Models */,
 				34937C6527972419002EBFEB /* ViewControllers */,
 				34937C662797244F002EBFEB /* StoryBoards */,
